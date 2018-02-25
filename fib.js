@@ -1,7 +1,7 @@
 "use strict";
 
 function fib(n) {
-  if (isNaN(n) || n < 1 || n % 1 !== 0) {
+  if (isNaN(n) || n < 0 || n % 1 !== 0) {
     throw new Error("fibonacci expects a nonnegative integer");
   } else if (n === 0) {
     return 0;
